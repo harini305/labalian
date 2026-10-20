@@ -1,0 +1,109 @@
+.wrap {
+  display: grid;
+  gap: 28px;
+}
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.intro {
+  margin: 0;
+  max-width: 22rem;
+  color: var(--ink-mute);
+  font-size: var(--fs-small);
+}
+.figure {
+  margin: 0;
+  display: grid;
+  align-content: start;
+  gap: 20px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+.quote {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 1.1rem + 0.9vw, 1.8rem);
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--ink);
+}
+.caption {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.name {
+  font-weight: 600;
+  font-size: var(--fs-small);
+  letter-spacing: 0.04em;
+}
+.meta {
+  color: var(--ink-mute);
+  font-size: var(--fs-xs);
+}
+.more {
+  justify-self: start;
+  min-height: 40px;
+  padding: 0;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--green);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  cursor: pointer;
+}
+.more:hover {
+  color: var(--green-deep);
+}
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+.arrow {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  background: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+.arrow:hover {
+  background: var(--ink);
+  color: #fff;
+}
+.count {
+  margin: 0;
+  min-width: 3.5em;
+  text-align: center;
+  font-size: var(--fs-small);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+@media (min-width: 960px) {
+  .wrap {
+    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+    gap: clamp(40px, 6vw, 96px);
+    /* reserve room for the longest collapsed review so the layout doesn't jump */
+    min-height: 16rem;
+  }
+  .side {
+    padding-right: 24px;
+    border-right: 1px solid var(--line);
+  }
+  .controls {
+    margin-top: auto; /* arrows sit at the bottom, level with the end of the quote */
+  }
+  .figure {
+    padding-top: 0;
+    border-top: 0;
+    align-content: center;
+  }
+}

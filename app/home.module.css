@@ -1,0 +1,329 @@
+/* Hero */
+.hero {
+  padding-top: clamp(1.25rem, 0.5rem + 2vw, 2.5rem);
+}
+.heroGrid {
+  display: grid;
+  gap: 28px;
+}
+.heroText {
+  display: grid;
+  gap: 1.4rem;
+  align-content: center;
+}
+.title {
+  font-size: var(--fs-display);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+}
+.title em {
+  display: block;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--green-deep);
+}
+.heroText :global(.lead) {
+  max-width: 30rem;
+}
+.heroMedia {
+  aspect-ratio: 4 / 3;
+}
+.editions {
+  margin: 0;
+  width: 100%;
+  max-width: 26rem;
+}
+.editions > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd8cc;
+  font-size: var(--fs-small);
+}
+.editions > div:last-child {
+  border-bottom: 1px solid #ddd8cc;
+}
+.editions dt {
+  font-weight: 500;
+}
+.editions dd {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+.areaLead {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+.areaLead p {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 1.15rem + 0.6vw, 1.6rem);
+  line-height: 1.4;
+  color: var(--ink);
+}
+.areaBody {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.facts {
+  margin: clamp(1.5rem, 1.25rem + 1vw, 2.25rem) 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.facts > div {
+  padding: 16px 0 18px;
+}
+.facts > div:nth-child(odd) {
+  padding-right: 16px;
+}
+.facts > div:nth-child(even) {
+  padding-left: 16px;
+  border-left: 1px solid var(--line);
+}
+.facts > div:nth-child(-n + 2) {
+  border-bottom: 1px solid var(--line);
+}
+.facts dt {
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ink-mute);
+}
+.facts dd {
+  margin: 4px 0 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.45rem, 1.25rem + 0.8vw, 2rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+.facts dd span {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--font-sans);
+  font-size: var(--fs-xs);
+  color: var(--ink-mute);
+}
+
+/* Welcome */
+.welcome {
+  display: grid;
+  gap: 1.5rem;
+}
+.welcome h2 {
+  max-width: 14ch;
+}
+
+/* The area */
+.area {
+  padding-bottom: calc(var(--section) * 0.4);
+}
+.areaMedia {
+  height: clamp(300px, 52vw, 640px);
+}
+.areaMedia img {
+  position: absolute;
+  inset: -8% 0;
+  height: 116%;
+}
+.areaPanel {
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
+  margin-top: -48px;
+  padding: clamp(24px, 4vw, 56px);
+  background: var(--paper);
+  box-shadow: 0 20px 50px -38px rgba(40, 42, 43, 0.45);
+}
+
+/* The villa */
+.villa {
+  display: grid;
+  gap: 40px;
+}
+.portraits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+.portrait {
+  aspect-ratio: 2 / 3;
+}
+.villaText {
+  display: grid;
+  gap: 1.25rem;
+  align-content: center;
+  justify-items: start;
+}
+
+/* Activities preview */
+.rowHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px 32px;
+  margin-bottom: clamp(1.5rem, 1.25rem + 1vw, 2.25rem);
+}
+.tiles {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 16px;
+}
+.tile {
+  display: grid;
+  gap: 12px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.tileMedia {
+  aspect-ratio: 4 / 5;
+}
+.tileMedia img {
+  transition: transform 0.8s var(--ease);
+}
+.tile:hover .tileMedia img {
+  transform: scale(1.04);
+}
+.tileTitle {
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 1.1rem + 0.4vw, 1.45rem);
+  font-weight: 500;
+  line-height: 1.25;
+}
+.tile:hover .tileTitle {
+  color: var(--green-deep);
+}
+
+/* Retreats */
+.retreats {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+.retreatsMedia {
+  aspect-ratio: 3 / 2;
+}
+.retreatsText {
+  display: grid;
+  gap: 1.1rem;
+  justify-items: start;
+}
+
+/* Cookbook */
+.cookbook {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+.cookbookMedia {
+  width: min(100%, 300px);
+  aspect-ratio: 3 / 4;
+  box-shadow: 0 24px 50px -30px rgba(40, 42, 43, 0.5);
+}
+.cookbookText {
+  display: grid;
+  gap: 1.1rem;
+  justify-items: start;
+  max-width: 38rem;
+}
+
+
+@media (min-width: 768px) {
+  .facts {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .facts > div,
+  .facts > div:nth-child(odd),
+  .facts > div:nth-child(even) {
+    padding: 20px 24px 22px;
+    border-left: 1px solid var(--line);
+    border-bottom: 0;
+  }
+  .facts > div:first-child {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .areaPanel {
+    margin-top: -120px;
+    margin-inline: clamp(0px, 6vw, 96px);
+  }
+  .tiles {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (min-width: 960px) {
+  .heroGrid {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: clamp(40px, 5vw, 80px);
+    align-items: center;
+  }
+  .heroGrid {
+    align-items: stretch;
+  }
+  .heroMedia {
+    aspect-ratio: auto;
+    min-height: 360px;
+  }
+  .cookbook {
+    grid-template-columns: auto 1fr;
+    gap: clamp(32px, 6vw, 96px);
+  }
+  .cookbookMedia {
+    width: clamp(240px, 22vw, 300px);
+  }
+  .welcome {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: clamp(40px, 5vw, 80px);
+    align-items: start;
+  }
+  .villa {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+    gap: clamp(48px, 6vw, 96px);
+    align-items: center;
+  }
+  /* Portraits stretch to the text height (staggered), at any width. */
+  .villa {
+    align-items: stretch;
+  }
+  .portraits {
+    align-items: stretch;
+    min-height: 440px;
+  }
+  .portrait {
+    aspect-ratio: auto;
+  }
+  /* Photos and text share the same top and bottom edges. */
+  .villaText {
+    align-content: space-between;
+  }
+  .retreats {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: clamp(48px, 6vw, 96px);
+    align-items: stretch;
+  }
+  .retreatsMedia {
+    aspect-ratio: auto;
+    min-height: 420px;
+  }
+  .retreatsText {
+    align-content: center;
+  }
+  .areaPanel {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: 56px;
+    align-items: center;
+  }
+
+}

@@ -1,0 +1,8 @@
+# Only the website source is uploaded to Vercel. The Phase 1 audit (original
+# full-size photos, screenshots, reports), the hand-off report and the dev-only
+# image script are not part of the production site.
+docs/
+scripts/
+node_modules/
+.next/
+*.log

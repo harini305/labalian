@@ -1,0 +1,20 @@
+.wrap {
+  display: inline-flex;
+}
+.button {
+  min-height: 36px;
+  min-width: 64px;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.button:hover {
+  border-color: var(--green-deep);
+  color: var(--green-deep);
+}

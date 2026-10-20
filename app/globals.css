@@ -1,0 +1,380 @@
+/* La Balian — design tokens and shared primitives */
+
+:root {
+  /* Colour: derived from the original site (#65BC7B, #DCE3E9, #282A2B) */
+  --ink: #282a2b;
+  --ink-soft: #4b5154;
+  --ink-mute: #586064;
+  --paper: #ffffff;
+  --sand: #f6f4ef;
+  --mist: #dce3e9;
+  --mist-soft: #edf1f4;
+  --line: #dcdfdc;
+  --line-dark: #3b3e3f;
+  --green: #65bc7b; /* brand accent: decorative use and on dark surfaces only */
+  --green-deep: #2f6b41; /* text/buttons on light surfaces (6.4:1 with white) */
+  --green-ink: #23512f;
+  --green-wash: #e6f2e9;
+  --night: #282a2b;
+  --night-text: #e9ecee;
+  --night-mute: #b5bcc1;
+
+  /* Type */
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-montserrat), system-ui, sans-serif;
+  --fs-display: clamp(2.75rem, 1.55rem + 4.4vw, 5.25rem);
+  --fs-h1: clamp(2.5rem, 1.75rem + 2.9vw, 4.125rem);
+  --fs-h2: clamp(2rem, 1.5rem + 1.9vw, 3rem);
+  --fs-h3: clamp(1.4rem, 1.25rem + 0.6vw, 1.75rem);
+  --fs-lead: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-xs: 0.78rem;
+
+  /* Space and layout */
+  --container: 1440px;
+  --narrow: 760px;
+  --gutter: clamp(16px, 4vw, 56px);
+  --section: clamp(2.5rem, 1.75rem + 2.4vw, 4rem);
+  --header-h: 72px;
+  --radius: 2px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h) + 24px);
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: 1.7;
+  font-weight: 400;
+  font-variant-numeric: lining-nums;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+  line-height: 1.2;
+}
+
+/* Layouts space their children with `gap`; only running text spaces paragraphs. */
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+.prose > p + p {
+  margin-top: 1.1em;
+}
+
+a {
+  color: var(--green-deep);
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+a:hover {
+  color: var(--green-ink);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--green-deep);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--green-wash);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  z-index: 100;
+  background: var(--ink);
+  color: #fff;
+  padding: 10px 16px;
+  font-size: var(--fs-small);
+}
+.skip-link:focus {
+  top: 12px;
+  color: #fff;
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: calc(var(--container) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.narrow {
+  max-width: calc(var(--narrow) + var(--gutter) * 2);
+}
+.section {
+  padding-block: var(--section);
+}
+.section--tight {
+  padding-block: calc(var(--section) * 0.7);
+}
+.section--sand {
+  background: var(--sand);
+}
+.section--mist {
+  background: var(--mist-soft);
+}
+
+.lead {
+  font-size: var(--fs-lead);
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+.muted {
+  color: var(--ink-mute);
+}
+.small {
+  font-size: var(--fs-small);
+}
+
+.prose p {
+  color: var(--ink-soft);
+}
+
+.section-head {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: clamp(1.5rem, 1.25rem + 1vw, 2.25rem);
+  max-width: 46rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  min-height: 48px;
+  padding: 0.85rem 1.6rem;
+  border: 1px solid var(--green-deep);
+  border-radius: var(--radius);
+  background: var(--green-deep);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.25s var(--ease), color 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+.btn:hover {
+  background: var(--green-ink);
+  border-color: var(--green-ink);
+  color: #fff;
+}
+.btn--ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--ink);
+}
+.btn--ghost:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+}
+.btn--light {
+  background: #fff;
+  color: var(--ink);
+  border-color: #fff;
+}
+.btn--light:hover {
+  background: var(--mist);
+  border-color: var(--mist);
+  color: var(--ink);
+}
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--green);
+  padding-bottom: 3px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.text-link:hover {
+  color: var(--green-deep);
+  border-color: var(--green-deep);
+}
+.text-link::after {
+  content: "→";
+  transition: transform 0.25s var(--ease);
+}
+.text-link:hover::after {
+  transform: translateX(3px);
+}
+
+/* The last section of every page fills the screen together with the footer, so the
+   end of a page never shows a sliver of the previous section. --footer-h is measured
+   by components/FooterSize.js; the fallbacks approximate it before hydration. */
+:root {
+  --footer-h: 552px;
+}
+@media (min-width: 768px) {
+  :root {
+    --footer-h: 312px;
+  }
+}
+@media (min-width: 1100px) {
+  :root {
+    --footer-h: 290px;
+  }
+}
+main > :last-child {
+  min-height: calc(100svh - var(--header-h) - 1px - var(--footer-h)); /* 1px: header border */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Media frames reserve space to avoid layout shift */
+.frame {
+  position: relative;
+  overflow: hidden;
+  background: var(--mist-soft);
+}
+/* The frame's size always comes from the layout (aspect-ratio, explicit height or
+   grid stretch), never from the image, so photos can fill a column of any height. */
+.frame > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Demo notice */
+.demo-note {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border-left: 3px solid var(--green);
+  background: var(--green-wash);
+  color: var(--ink);
+  font-size: var(--fs-small);
+  line-height: 1.55;
+}
+.demo-note strong {
+  font-weight: 600;
+}
+
+/* Lists with a fine leading rule */
+.list-ruled {
+  list-style: none;
+}
+.list-ruled li {
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.list-ruled li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+/* Motion: elements start hidden only when JS motion is active (see app/layout.js) */
+html.motion [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+}
+html.motion [data-intro] {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

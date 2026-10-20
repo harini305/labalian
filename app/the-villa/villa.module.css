@@ -1,0 +1,205 @@
+/* Intro highlights */
+.highlights {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px 16px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.highlights li {
+  padding-left: 12px;
+  border-left: 2px solid var(--green);
+  font-size: var(--fs-small);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* About: text beside a photo mosaic that always matches the text height */
+.about {
+  display: grid;
+  gap: 32px;
+}
+.aboutText {
+  display: grid;
+  gap: 1.25rem;
+  align-content: center;
+  justify-items: start;
+}
+.aboutMedia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.aboutMain {
+  grid-column: 1 / -1;
+  aspect-ratio: 3 / 2;
+}
+.aboutSmall {
+  aspect-ratio: 3 / 2;
+}
+
+/* Features: a single balanced column flow */
+.amenities {
+  columns: 1;
+  column-gap: 40px;
+}
+.group {
+  break-inside: auto;
+}
+.group + .group .groupTitle {
+  margin-top: 28px;
+}
+.groupTitle {
+  font-size: 1.35rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--ink);
+  break-after: avoid;
+}
+.amenityList {
+  list-style: none;
+}
+.amenityList li {
+  break-inside: avoid;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+/* Staff */
+.staff {
+  display: grid;
+  gap: 32px;
+}
+.staffText {
+  display: grid;
+  gap: 1.25rem;
+  align-content: center;
+}
+.staffMedia {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  gap: 12px;
+}
+.staffWide {
+  aspect-ratio: 3 / 2;
+}
+.staffTall {
+  aspect-ratio: auto;
+}
+
+/* Food */
+.food {
+  display: grid;
+  gap: 32px;
+}
+.foodText {
+  display: grid;
+  gap: 1.25rem;
+  align-content: center;
+}
+.prices {
+  margin: 8px 0 0;
+}
+.prices > div {
+  display: grid;
+  gap: 2px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+.prices > div:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.prices dt {
+  font-weight: 600;
+  font-size: var(--fs-small);
+}
+.prices dd {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: var(--fs-small);
+}
+.foodMedia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.foodA {
+  grid-column: 1 / -1;
+  aspect-ratio: 3 / 2;
+}
+.foodB {
+  aspect-ratio: 1 / 1;
+}
+
+.cook {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 40px;
+}
+.cookLine {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 1.15rem + 0.6vw, 1.65rem);
+  line-height: 1.35;
+  max-width: 40rem;
+}
+
+@media (min-width: 640px) {
+  .prices > div {
+    grid-template-columns: 10rem 1fr;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .amenities {
+    columns: 2;
+  }
+}
+
+@media (min-width: 960px) {
+  .amenities {
+    columns: 3;
+  }
+  /* Two-column rows: the photo side stretches to the text height (with a floor),
+     so neither column leaves empty space. */
+  .about {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: clamp(40px, 5vw, 80px);
+  }
+  .aboutMedia {
+    grid-template-rows: minmax(0, 3fr) minmax(0, 2fr);
+    min-height: 520px;
+  }
+  .aboutMain,
+  .aboutSmall {
+    aspect-ratio: auto;
+  }
+  .staff {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: clamp(40px, 5vw, 80px);
+  }
+  .staffMedia {
+    min-height: 400px;
+  }
+  .staffWide {
+    aspect-ratio: auto;
+  }
+  .food {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
+    gap: clamp(40px, 5vw, 80px);
+  }
+  .foodMedia {
+    grid-template-rows: minmax(0, 3fr) minmax(0, 2fr);
+    min-height: 480px;
+  }
+  .foodA,
+  .foodB {
+    aspect-ratio: auto;
+  }
+}

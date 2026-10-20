@@ -1,0 +1,52 @@
+.split,
+.plain {
+  display: grid;
+  gap: 32px;
+  padding-top: clamp(1.5rem, 0.75rem + 2vw, 2.75rem);
+  padding-bottom: clamp(1.75rem, 1rem + 2vw, 3rem);
+}
+.text {
+  display: grid;
+  gap: 1.25rem;
+  align-content: center;
+}
+.text :global(.lead) {
+  max-width: 34rem;
+}
+.media {
+  aspect-ratio: 3 / 2;
+}
+
+.plain .text {
+  max-width: 48rem;
+}
+
+.band {
+  padding-top: clamp(1.5rem, 0.75rem + 2vw, 2.75rem);
+}
+.bandText {
+  display: grid;
+  gap: 1.25rem;
+  padding-bottom: clamp(1.5rem, 1rem + 1.5vw, 2.5rem);
+}
+.bandLead {
+  display: grid;
+  gap: 1rem;
+  max-width: 50rem;
+}
+.bandMedia {
+  height: clamp(260px, 42vw, 560px);
+}
+
+@media (min-width: 960px) {
+  .split {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: clamp(40px, 5vw, 80px);
+  }
+  /* The photo matches the text block's height (never shorter than 380px). */
+  .media {
+    aspect-ratio: auto;
+    min-height: 380px;
+  }
+
+}

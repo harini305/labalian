@@ -1,0 +1,46 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ink);
+  text-decoration: none;
+  min-height: 44px;
+}
+.logo:hover {
+  color: var(--ink);
+}
+.mark {
+  width: 40px;
+  height: auto;
+}
+.words {
+  display: grid;
+  line-height: 1;
+  white-space: nowrap;
+}
+.name {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 1.02rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+.tag {
+  margin-top: 6px;
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.inverse,
+.inverse:hover {
+  color: var(--night-text);
+}
+.inverse .mark {
+  filter: invert(1);
+}
+.inverse .tag {
+  color: var(--night-mute);
+}

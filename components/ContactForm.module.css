@@ -1,0 +1,78 @@
+.form {
+  display: grid;
+  gap: 18px;
+}
+.row {
+  display: grid;
+  gap: 18px;
+}
+.field {
+  display: grid;
+  gap: 6px;
+}
+.field label {
+  font-size: var(--fs-small);
+  font-weight: 600;
+}
+.optional,
+.hint {
+  font-weight: 400;
+  color: var(--ink-mute);
+  font-size: var(--fs-xs);
+}
+.field input,
+.field textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #8a9195;
+  border-radius: var(--radius);
+  background: var(--paper);
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.field textarea {
+  resize: vertical;
+  min-height: 112px;
+}
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--green-deep);
+  box-shadow: 0 0 0 3px rgba(47, 107, 65, 0.2);
+}
+.field [aria-invalid="true"] {
+  border-color: #a3362b;
+}
+.error {
+  color: #a3362b;
+  font-size: var(--fs-small);
+  font-weight: 500;
+}
+.done {
+  display: grid;
+  gap: 14px;
+  justify-items: start;
+  padding: clamp(20px, 3vw, 32px);
+  border: 1px solid var(--green);
+  background: var(--green-wash);
+}
+.done:focus {
+  outline: none;
+}
+.done h3 {
+  font-size: 1.5rem;
+}
+.done p {
+  margin: 0;
+}
+.done strong {
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 640px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+}

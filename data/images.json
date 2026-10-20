@@ -1,0 +1,816 @@
+{
+ "villa-pool": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/villa-pool-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/villa-pool-900.webp"
+   }
+  ],
+  "source": "2017_05_gallery-1.jpg"
+ },
+ "villa-shape": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/villa-shape-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/villa-shape-900.webp"
+   }
+  ],
+  "source": "media-library-unused/2019_11_Villa-Shape.jpg"
+ },
+ "dining-terrace": {
+  "width": 1024,
+  "height": 500,
+  "variants": [
+   {
+    "w": 640,
+    "src": "/images/dining-terrace-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "/images/dining-terrace-1024.webp"
+   }
+  ],
+  "source": "media-library-unused/2017_06_Tim5-1024x500.png"
+ },
+ "area-palms": {
+  "width": 2400,
+  "height": 1602,
+  "variants": [
+   {
+    "w": 640,
+    "src": "/images/area-palms-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "/images/area-palms-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "/images/area-palms-1600.webp"
+   },
+   {
+    "w": 2400,
+    "src": "/images/area-palms-2400.webp"
+   }
+  ],
+  "source": "2019_11_7.jpg"
+ },
+ "priest": {
+  "width": 1200,
+  "height": 1797,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/priest-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/priest-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/priest-1200.webp"
+   }
+  ],
+  "source": "2019_11_119.jpg"
+ },
+ "offering": {
+  "width": 1200,
+  "height": 1798,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/offering-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/offering-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/offering-1200.webp"
+   }
+  ],
+  "source": "2019_11_120.jpg"
+ },
+ "staff": {
+  "width": 1600,
+  "height": 1068,
+  "variants": [
+   {
+    "w": 640,
+    "src": "/images/staff-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "/images/staff-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "/images/staff-1600.webp"
+   }
+  ],
+  "source": "2019_11_208.jpg"
+ },
+ "team": {
+  "width": 960,
+  "height": 1280,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/team-480.webp"
+   },
+   {
+    "w": 960,
+    "src": "/images/team-960.webp"
+   }
+  ],
+  "source": "media-library-unused/2020_09_Team-Photo.jpg"
+ },
+ "food-bowl": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/food-bowl-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/food-bowl-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/food-bowl-1200.webp"
+   }
+  ],
+  "source": "2019_11_89.jpg"
+ },
+ "breakfast": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/breakfast-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/breakfast-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/breakfast-1200.webp"
+   }
+  ],
+  "source": "2019_11_27.jpg"
+ },
+ "bbq": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/bbq-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/bbq-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/bbq-1200.webp"
+   }
+  ],
+  "source": "2019_11_90.jpg"
+ },
+ "massage": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/massage-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/massage-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/massage-1200.webp"
+   }
+  ],
+  "source": "2019_11_37.jpg"
+ },
+ "surf-sunset": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/surf-sunset-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/surf-sunset-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/surf-sunset-1200.webp"
+   }
+  ],
+  "source": "2019_11_180.jpg"
+ },
+ "trekking": {
+  "width": 2400,
+  "height": 1602,
+  "variants": [
+   {
+    "w": 640,
+    "src": "/images/trekking-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "/images/trekking-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "/images/trekking-1600.webp"
+   },
+   {
+    "w": 2400,
+    "src": "/images/trekking-2400.webp"
+   }
+  ],
+  "source": "2019_11_247.jpg"
+ },
+ "yoga-class": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/yoga-class-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/yoga-class-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/yoga-class-1200.webp"
+   }
+  ],
+  "source": "2019_11_59.jpg"
+ },
+ "bike": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/bike-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/bike-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/bike-1200.webp"
+   }
+  ],
+  "source": "2019_11_180-1.jpg"
+ },
+ "cooking": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/cooking-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/cooking-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/cooking-1200.webp"
+   }
+  ],
+  "source": "2019_11_2-104.jpg"
+ },
+ "canang": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/canang-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/canang-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/canang-1200.webp"
+   }
+  ],
+  "source": "2019_11_231.jpg"
+ },
+ "dance": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/dance-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/dance-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/dance-1200.webp"
+   }
+  ],
+  "source": "2019_11_210-1.jpg"
+ },
+ "water-blessing": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/water-blessing-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/water-blessing-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/water-blessing-1200.webp"
+   }
+  ],
+  "source": "2019_11_139.jpg"
+ },
+ "rindik": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/rindik-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/rindik-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/rindik-1200.webp"
+   }
+  ],
+  "source": "2019_11_229.jpg"
+ },
+ "shopping": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/shopping-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/shopping-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/shopping-1200.webp"
+   }
+  ],
+  "source": "2019_11_237-1.jpg"
+ },
+ "ubud": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/ubud-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/ubud-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/ubud-1200.webp"
+   }
+  ],
+  "source": "2019_11_256.jpg"
+ },
+ "shala": {
+  "width": 2400,
+  "height": 1546,
+  "variants": [
+   {
+    "w": 640,
+    "src": "/images/shala-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "/images/shala-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "/images/shala-1600.webp"
+   },
+   {
+    "w": 2400,
+    "src": "/images/shala-2400.webp"
+   }
+  ],
+  "source": "2019_11_56.jpg"
+ },
+ "restorative": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/restorative-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/restorative-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/restorative-1200.webp"
+   }
+  ],
+  "source": "2019_11_57.jpg"
+ },
+ "circle": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/circle-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/circle-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/circle-1200.webp"
+   }
+  ],
+  "source": "2019_11_47.jpg"
+ },
+ "adjust": {
+  "width": 1200,
+  "height": 801,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/adjust-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "/images/adjust-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "/images/adjust-1200.webp"
+   }
+  ],
+  "source": "2019_11_3.jpg"
+ },
+ "cookbook-cover": {
+  "width": 960,
+  "height": 1280,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/cookbook-cover-480.webp"
+   },
+   {
+    "w": 960,
+    "src": "/images/cookbook-cover-960.webp"
+   }
+  ],
+  "source": "2020_09_Cook-Book1-1.jpg"
+ },
+ "g-bathroom-1": {
+  "width": 450,
+  "height": 300,
+  "variants": [
+   {
+    "w": 450,
+    "src": "/images/g-bathroom-1-450.webp"
+   }
+  ],
+  "source": "2019_11_Bathroom-1.jpg"
+ },
+ "g-bathroom-2": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/g-bathroom-2-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/g-bathroom-2-900.webp"
+   }
+  ],
+  "source": "2019_11_Bathroom-2.jpg"
+ },
+ "g-bedroom-1": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/g-bedroom-1-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/g-bedroom-1-900.webp"
+   }
+  ],
+  "source": "2019_11_Bedroom-1.jpg"
+ },
+ "g-bedroom-2": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/g-bedroom-2-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/g-bedroom-2-900.webp"
+   }
+  ],
+  "source": "2019_11_Bedroom-2.jpg"
+ },
+ "g-bedroom-3": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/g-bedroom-3-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/g-bedroom-3-900.webp"
+   }
+  ],
+  "source": "2019_11_Bedroom-3.jpg"
+ },
+ "g-bedroom-4": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/g-bedroom-4-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/g-bedroom-4-900.webp"
+   }
+  ],
+  "source": "2019_11_Bedroom-4.jpg"
+ },
+ "g-bedroom-5": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/g-bedroom-5-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/g-bedroom-5-900.webp"
+   }
+  ],
+  "source": "2019_11_Bedroom-5.jpg"
+ },
+ "g-bedroom-6": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/g-bedroom-6-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/g-bedroom-6-900.webp"
+   }
+  ],
+  "source": "2019_11_Bedroom-6.jpg"
+ },
+ "g-bedroom-7": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/g-bedroom-7-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/g-bedroom-7-900.webp"
+   }
+  ],
+  "source": "2019_11_Bedroom-7.jpg"
+ },
+ "g-bedroom-8": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/g-bedroom-8-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/g-bedroom-8-900.webp"
+   }
+  ],
+  "source": "2019_11_Bedroom-8.jpg"
+ },
+ "g-kitchen": {
+  "width": 450,
+  "height": 300,
+  "variants": [
+   {
+    "w": 450,
+    "src": "/images/g-kitchen-450.webp"
+   }
+  ],
+  "source": "2019_11_Kitchen.jpg"
+ },
+ "g-pool-view-3": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/g-pool-view-3-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/g-pool-view-3-900.webp"
+   }
+  ],
+  "source": "2019_11_Pool-View-3.jpg"
+ },
+ "g-rice-fields": {
+  "width": 450,
+  "height": 300,
+  "variants": [
+   {
+    "w": 450,
+    "src": "/images/g-rice-fields-450.webp"
+   }
+  ],
+  "source": "2019_11_Rice-Fields.jpg"
+ },
+ "g-entrance": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/g-entrance-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/g-entrance-900.webp"
+   }
+  ],
+  "source": "2019_11_Entrance.jpg"
+ },
+ "g-full-room": {
+  "width": 450,
+  "height": 300,
+  "variants": [
+   {
+    "w": 450,
+    "src": "/images/g-full-room-450.webp"
+   }
+  ],
+  "source": "2019_11_Full-Room.jpg"
+ },
+ "g-massage-hut": {
+  "width": 225,
+  "height": 300,
+  "variants": [
+   {
+    "w": 225,
+    "src": "/images/g-massage-hut-225.webp"
+   }
+  ],
+  "source": "2019_11_Massage-Hut.jpg"
+ },
+ "g-ganesha": {
+  "width": 225,
+  "height": 300,
+  "variants": [
+   {
+    "w": 225,
+    "src": "/images/g-ganesha-225.webp"
+   }
+  ],
+  "source": "2019_11_Ganesha.jpg"
+ },
+ "g-day-beds-2": {
+  "width": 225,
+  "height": 300,
+  "variants": [
+   {
+    "w": 225,
+    "src": "/images/g-day-beds-2-225.webp"
+   }
+  ],
+  "source": "2019_11_Day-Beds-2.jpg"
+ },
+ "g-living-room": {
+  "width": 450,
+  "height": 300,
+  "variants": [
+   {
+    "w": 450,
+    "src": "/images/g-living-room-450.webp"
+   }
+  ],
+  "source": "2019_11_Living-Room.jpg"
+ },
+ "g-dining-2": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/g-dining-2-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/g-dining-2-900.webp"
+   }
+  ],
+  "source": "2019_11_Dining-2.jpg"
+ },
+ "g-night-sky": {
+  "width": 900,
+  "height": 600,
+  "variants": [
+   {
+    "w": 480,
+    "src": "/images/g-night-sky-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "/images/g-night-sky-900.webp"
+   }
+  ],
+  "source": "2019_11_Night-Sky.jpg"
+ },
+ "_logo": {
+  "emblem": {
+   "width": 116,
+   "height": 117,
+   "src": "/images/logo-emblem.png"
+  }
+ }
+}

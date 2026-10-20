@@ -1,0 +1,76 @@
+.yoga {
+  display: grid;
+  gap: 40px;
+}
+.yogaText {
+  max-width: 40rem;
+}
+.contactLine {
+  color: var(--ink) !important;
+  font-weight: 500;
+}
+.mosaic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-content: start;
+}
+.mA {
+  grid-column: 1 / -1;
+  aspect-ratio: 3 / 2;
+}
+.mB {
+  aspect-ratio: 4 / 5;
+}
+
+.weddings {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+.weddingMedia {
+  aspect-ratio: 3 / 2;
+  max-width: 900px;
+}
+.weddingText {
+  display: grid;
+  gap: 1.1rem;
+  max-width: 34rem;
+}
+.fee {
+  margin: 0;
+  padding: 12px 14px;
+  border-left: 3px solid var(--green);
+  background: var(--paper);
+}
+
+@media (min-width: 960px) {
+  /* Photo columns stretch to the text height so both sides end level. */
+  .yoga {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
+    gap: clamp(40px, 5vw, 80px);
+  }
+  .yogaText {
+    align-self: center;
+  }
+  .mosaic {
+    grid-template-rows: minmax(0, 3fr) minmax(0, 2fr);
+    min-height: 480px;
+  }
+  .mA,
+  .mB {
+    aspect-ratio: auto;
+  }
+  .weddings {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+    gap: clamp(40px, 5vw, 80px);
+    align-items: stretch;
+  }
+  .weddingMedia {
+    aspect-ratio: auto;
+    min-height: 340px;
+  }
+  .weddingText {
+    align-content: center;
+  }
+}

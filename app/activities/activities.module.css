@@ -1,0 +1,101 @@
+.jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+.jump a {
+  display: inline-block;
+  padding: 8px 0;
+  color: var(--ink);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--green);
+}
+.jump a:hover {
+  color: var(--green-deep);
+}
+
+.groupHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--ink);
+}
+.groupHead p {
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+}
+.item {
+  display: grid;
+  gap: 16px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+.media {
+  aspect-ratio: 3 / 2;
+}
+.body {
+  display: grid;
+  gap: 12px;
+  align-content: center;
+}
+.body > p {
+  font-size: 0.95rem;
+}
+.head {
+  display: grid;
+  gap: 6px;
+}
+.cost {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--green-deep);
+}
+.costLabel {
+  margin-right: 6px;
+  font-family: var(--font-sans);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ink-mute);
+}
+.detail {
+  color: var(--ink);
+}
+.note {
+  margin-top: 24px;
+  max-width: 44rem;
+}
+
+@media (min-width: 640px) {
+  /* The photo stretches to the height of its text, with a 3:2 minimum. */
+  .item {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    gap: 28px;
+  }
+  .media {
+    aspect-ratio: auto;
+    min-height: 180px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .item {
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 40px;
+    padding: 26px 0;
+  }
+  .media {
+    min-height: 168px;
+  }
+}

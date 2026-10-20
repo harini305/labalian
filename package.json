@@ -1,0 +1,17 @@
+{
+  "name": "labalian",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "images": "python -I scripts/optimize-images.py"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "next": "^16.4.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}

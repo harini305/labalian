@@ -1,0 +1,95 @@
+.footer {
+  background: var(--night);
+  color: var(--night-text);
+  font-size: var(--fs-small);
+  line-height: 1.6;
+}
+.footer a {
+  color: var(--night-text);
+  text-decoration: none;
+}
+.footer a:hover {
+  color: var(--green);
+  text-decoration: underline;
+}
+.footer :focus-visible {
+  outline-color: var(--green);
+}
+.grid {
+  display: grid;
+  gap: 28px;
+  padding-block: 44px 32px;
+}
+.place {
+  margin: 14px 0 0;
+  color: var(--night-mute);
+  max-width: 26rem;
+}
+.nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 24px;
+}
+.nav a,
+.contact a {
+  display: inline-block;
+  padding: 6px 0;
+}
+.contact {
+  display: grid;
+  align-content: start;
+  justify-items: start;
+}
+.line {
+  margin: 0;
+  padding: 3px 0;
+  user-select: all;
+}
+.label {
+  display: inline-block;
+  min-width: 4.2em;
+  color: var(--night-mute);
+  user-select: none;
+}
+.social {
+  display: flex;
+  gap: 20px;
+  margin-top: 8px;
+}
+.social a {
+  color: var(--green);
+}
+.base {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding-block: 18px 22px;
+  color: var(--night-mute);
+  font-size: var(--fs-xs);
+}
+/* Divider aligned to the content edges (inside the container's side padding). */
+.base::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: var(--gutter);
+  right: var(--gutter);
+  border-top: 1px solid var(--line-dark);
+}
+.base p {
+  margin: 0;
+}
+.base a {
+  color: var(--night-mute);
+  padding: 2px 0;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 40px;
+  }
+}
